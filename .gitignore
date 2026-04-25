@@ -8,8 +8,15 @@ node_modules/
 dist/
 build/
 target/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
 
-# Python
+# Python specific
 __pycache__/
 *.pyc
 *.pyo
@@ -18,41 +25,50 @@ __pycache__/
 env/
 venv/
 .venv/
-.ENV
 .env
-.env.*
 .env.local
+.env.*
+.coverage
+coverage/
+htmlcov/
 
 # Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# IDE
+# Editor files
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
+*~
 
-# Coverage
-coverage/
-htmlcov/
-.coverage
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Gradle
-.gradle/
-build/
-
-# MyPy
+# Testing
 .mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pytest
 .pytest_cache/
+.nyc_output/
+coverage/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
 
 # Compressed files
 *.zip
