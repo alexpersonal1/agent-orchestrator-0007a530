@@ -517,6 +517,82 @@ section {
     font-size: 0.85rem;
 }
 
+/* Clients Section */
+.clients {
+    background: var(--dark-bg);
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.client-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.client-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+}
+
+.client-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.client-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.client-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.milestone {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-1);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.milestone-date {
+    display: block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.milestone-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.visual-card {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Services Section */
 .services {
     background: var(--dark-bg);
